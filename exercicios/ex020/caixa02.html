@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: rgb(88, 88, 88);
+            padding: 3px;
+            border-radius: 10px;
+        }
+        nav > a{ 
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article{
+            background-color: lightgrey;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        article > aside {
+            background-color: rgb(143, 141, 141);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        aside{ 
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEU SITE</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+       </header>
+       <main>
+        <section id="Assuntos">
+            <p>Esportes Politica Jogos Series Filmes</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sapiente 
+                    veritatis saepe nostrum et, ipsa ipsum quaerat soluta similique quis quasi 
+                    beatae a ratione quibusdam in rem voluptatibus! Nulla, quis?</p>
+                    <aside>
+                        <p>ARTIGO ESCRITO POR GUILHERME FIDALBERTO</p>
+                    </aside>
+            </article>
+        </section>
+        </main>
+        <footer>Desenvolvido por INK.GUIDALBERTO_VMAX</footer>
+    
+</body>
+</html>

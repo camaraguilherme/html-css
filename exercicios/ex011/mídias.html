@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Hektakun-Pokemon-259-Marshtomp.72.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes, ou 
+        apenas aumente e diminua o tamanho do navegador</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+        <p>   Para isso funcionar,siga os passos:
+            <ol>
+                <li>basta adicionar a tag PICTURE</li> 
+                <li>depois usar a tag IMG</li>
+                <li>selecionar o arquivo que deseja</li> 
+                <li>logo após, adicione a tag SOURCE:MEDIA:TYPE</li>
+                <li>escreve max no lugar de min</li> 
+                <li>selecione os pixels e dps escreva o nome do arquivo</li>
+            </ol>
+        </p>
+        <h1>Reproduzindo aúdios</h1>
+        <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+        <audio src="midia/Happy Mistake - RKVC.mp3" autoplay controls></audio>
+        <p>Para acrescentar um aúdio no site, siga esses passos:
+            <ol>
+                <li>digite a tag AUDIO</li>
+                <li>aperte ctrl + espaco para selecionar o arquivo de aúdio</li>
+                <li>escreva os comando <u>AUTOPLAY</u> para o aúdio tocar sozinho (nao 
+                    está funcionando) e o comando <u>CONTROLS</u>.
+                </li>
+        </p>
+        <p>
+            Para ter mais compatibilidade:
+            <ol>
+                <li>coloque a tag <u>AUDIO</u></li>
+                <li>apague o <u>SRC</u></li>
+                <li>escreva no lugar, <u>PRELOAD""</u></li>
+                <li>dentro das aspas, escreva <u>METADATA</u></li>
+                <li>depois escreva os mesmos comandos do método anterior</li>
+                <li>após isso, insira a tag <u>SOURCE:SRC</u></li>
+                <li>aperte ctrl + espaco para selecionar o arquivo de aúdio.</li>
+                <li>ao lado do TYPE, escreva AUDIO/compactacao (mpeg,ogg,wav)</li>
+            </ol>
+        Exemplo da compatibilidade: <br>
+        <audio preload="metadata" controls autoplay></audio>
+       <source src="midia/Happy Mistake - RKVC.mp3" type="audio/mpeg">
+       <source src="midia/Happy Mistake - RKVC.ogg" type="audio/ogg">
+       <source src="midia/Happy Mistake - RKVC.wav" type="audio/wav"> <br>
+       
+       Se nenhum desses funcionar, o navegador utilizado nao consegue reproduzir audios
+    </p>
+    
+   
+        
+    
+</body>
+</html>

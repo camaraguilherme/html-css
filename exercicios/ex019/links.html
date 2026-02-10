@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        
+        /*SELETORES PERSONALIZADOS
+         # -> ID
+         . -> class
+         : -> Pseudo-Class
+         :: -> Pseudo-element
+         > -> Children
+         */
+
+         @import url('https://fonts.googleapis.com/css2?family=Modak&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #6A8C69, #53736A);
+            background-attachment: fixed;
+        }
+        h1 {
+            color:  #A8B545;
+            text-align: center;
+            text-shadow: 1px 1px 2px  #A8B545;
+            font: italic bold 3em "Saira"
+        }
+        ul{
+            color: #53736A;
+            font: normal 2em "Saira";
+        }
+        main{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px #024554;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+        }
+        a {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline
+        }
+        a:active{
+            color: darkorange;
+        }
+        a::after{
+            content: "©" ;
+            color: black;
+            text-decoration: none;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <main>
+        <ul>
+           <li><a href="https://www.youtube.com/@cortesdorenatin" target="_blank">Canal Cortes do Renatin</a></li>
+           <li><a href="https://www.youtube.com/@cortesdostag" target="_blank">Canal Cortes do Stag</a></li>
+           <li><a href="https://www.youtube.com/@espnbrasil" target="_blank">Canal ESPN BRASIL</a></li>
+        </ul>
+    </main>
+    
+</body>
+</html>
