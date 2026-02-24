@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            font-weight: bold;
+        }
+        tr, th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .filmesm{
+           background-color: rgba(255, 0, 0, 0.493);
+           color: white;
+        }
+        .filmesh{
+            background-color: rgba(0, 0, 0, 0.322);
+            color: white;
+        }
+        .m{
+            background-color: lightpink;
+        }
+        .h{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <tr>
+            <th>Grupos</th>
+            <th>Nomes</th>
+            <th colspan="3">Filmes</th>
+        </tr>
+        <tr>
+            <th rowspan="3" class="m">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td class="filmesm">Alien</td>
+            <td class="filmesm">Rambo</td>
+            <td class="filmesm">Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td class="filmesm">Hulk</td>
+            <td class="filmesm">Inception</td>
+            <td class="filmesm">Batman</td>
+        </tr>
+        <tr>
+            <td>Cláudia Melo</td>
+            <td class="filmesm">Oblivion</td>
+            <td class="filmesm">Matrix</td>
+            <td class="filmesm">Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3" class="h">Homens</th>
+            <td>Bruno mendonça</td>
+            <td class="filmesh">Intocáveis</td>
+            <td class="filmesh">Amnésia</td>
+            <td class="filmesh">Gladiador</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td class="filmesh">Wall-E</td>
+            <td class="filmesh">Old Boy</td>
+            <td class="filmesh">Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td class="filmesh">Star Wars V</td>
+            <td class="filmesh">Táxi Driver</td>
+            <td class="filmesh">Toy Story</td>
+        </tr>
+    </table>
+</body>
+</html>
