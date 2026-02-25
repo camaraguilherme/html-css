@@ -40,12 +40,12 @@
     <h1>Exercício de tabela</h1>
     <table>
         <tr>
-            <th>Grupos</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </tr>
         <tr>
-            <th rowspan="3" class="m">Mulheres</th>
+            <th rowspan="3" class="m" scope="rowgroup">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td class="filmesm">Alien</td>
             <td class="filmesm">Rambo</td>
@@ -64,7 +64,7 @@
             <td class="filmesm">Big Hero</td>
         </tr>
         <tr>
-            <th rowspan="3" class="h">Homens</th>
+            <th rowspan="3" class="h" scope="rowgroup">Homens</th>
             <td>Bruno mendonça</td>
             <td class="filmesh">Intocáveis</td>
             <td class="filmesh">Amnésia</td>
