@@ -23,16 +23,19 @@ header{
     align-items: center;
 }
 header > h1{
-    border: 2px dotted black;
+    /*border: 2px dotted black;*/
 
     flex: 0 0 220px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.705);
 }
 header > nav{
-    border: 2px dotted black;
+    /*border: 2px dotted black;*/
+    display: none;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    
 }
 header > nav > a{
     background-color: rgba(17, 17, 201, 0.822);
@@ -42,7 +45,6 @@ header > nav > a{
     border-radius: 6px;
     text-decoration: none;
     text-align: center;
-
 }
 header > nav > a:hover{
     background-color: white;
