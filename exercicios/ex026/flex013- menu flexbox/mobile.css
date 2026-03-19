@@ -1,12 +1,28 @@
 @charset "UTF-8";
 
-
-header, header > nav{
-    flex-flow: column nowrap;
-}
-header > h1{
-    flex-basis: 50px;
-}
-header > nav > a{
-    width: 90vw;
+@media screen and (max-width: 768px) {
+    span#burguer{
+        display: block;
+    }
+    menu{
+        display: block;
+    }
+    menu > nav > a{
+        display: inline-block;
+    }
+    header, header > menu > nav{
+        flex-flow: column nowrap;
+    }
+    header > h1{
+        flex-basis: 50px;
+    }
+    header > menu > nav > a{
+        width: 100vw;
+        margin: 0px;
+        border-top: 2px solid white;
+        border-radius: 0px;
+    }
+    main{
+        width: 768px;
+    }
 }
